@@ -1,6 +1,8 @@
+const inquirer = require('inquirer');
 
+const fs = require('fs');
 
-
+const markdownprompt = require('./markdownprompt');
 
 
 
@@ -15,14 +17,42 @@ const questions = [
 
     {
       type: 'input',
-      message: 'Please select a color!',
+      message: 'Please select a color for your shape!',
       name: 'color',
     },
 
     {
       type: 'input',
-      message: 'What text would you like to add to your shape?',
-      name: 'text_input',
-    }
+      message: 'What color should your text be?',
+      name: 'text_color',
+    },
+
+    {
+        type: 'input',
+        message: 'What color should your shape be?',
+        name: 'shape_color',
+      },
+
 
    ]
+
+
+
+   function init() {
+
+    inquirer.prompt(questions)
+
+    .then(function(answers) {
+
+      let markDown = markdownprompt(answers);
+        console.log(answers);
+
+        console.log(markdownprompt);
+
+        fs.writeFileSync('svgfile.svg', markdownprompt);
+    
+    })
+    
+}
+
+init();
