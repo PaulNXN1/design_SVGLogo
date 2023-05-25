@@ -1,4 +1,4 @@
-# design_SVGLogo
+# design_SVGLogo 💻
 
 ## Description
 This is the UPenn Module 10 Assignment.  The student was tasked to create a program with user prompts **[using node.js and NPM inquirer]** in order to create a resulting .svg file.  Additionally, the use of classes and constructors were used from the Week 10 learning focus points.  Module 10 from UPenn dealt with Object Oriented Programming.  
