@@ -1,3 +1,4 @@
+// Main class "Shape" in which the program will extend from.
 class Shape {
     constructor(shape_color, text_color, text_fill){
         this.shape_color = shape_color;
@@ -21,6 +22,7 @@ class Shape {
 
 }
 
+// Three classes below that extend from the parent class, Shape
 
 class Circle extends Shape {
     constructor(shape_color, text_color, text_fill){

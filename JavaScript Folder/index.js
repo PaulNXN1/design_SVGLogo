@@ -37,7 +37,7 @@ const questions = [
 
   
 
-   // function to initialize the prompts
+   // function to initialize the prompts for user input to create SVG logo
    function init() {
 
     inquirer.prompt(questions)
