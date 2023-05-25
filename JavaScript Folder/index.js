@@ -5,8 +5,6 @@ const fs = require('fs');
 const markdownprompt = require('./markdownprompt');
 
 
-
-
 const questions = [
    
     {
@@ -37,14 +35,14 @@ const questions = [
    ]
 
 
-
    function init() {
 
     inquirer.prompt(questions)
 
     .then(function(answers) {
 
-      let markDown = markdownprompt(answers);
+      let svgFile = markdownprompt(answers);
+
         console.log(answers);
 
         console.log(markdownprompt);
