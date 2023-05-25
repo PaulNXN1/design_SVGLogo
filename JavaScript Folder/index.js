@@ -12,6 +12,7 @@ const questions = [
       type: 'list',
       message: 'What is the shape of your choice?',
       choices: ['circle', 'square' , 'triangle'],
+      name: 'shape'
     },
 
     {
@@ -44,6 +45,7 @@ const questions = [
 
     .then(function(answers) {
 
+      console.log(createSVGLogo);
         let logoMaker = createSVGLogo(answers);
 
         console.log(answers);
