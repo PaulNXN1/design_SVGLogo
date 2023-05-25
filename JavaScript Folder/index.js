@@ -1,16 +1,17 @@
+// Packages and module exports 
 const inquirer = require('inquirer');
 
 const fs = require('fs');
 
-const markdownprompt = require('./markdownprompt');
+const createSVGLogo = require('../utils/createSVGLogo');
 
-
+// Questions that will be prompted to the user at the start of the program. 
 const questions = [
    
     {
       type: 'list',
       message: 'What is the shape of your choice?',
-      choices: ['circle', 'square' , 'triangle']
+      choices: ['circle', 'square' , 'triangle'],
     },
 
     {
@@ -34,23 +35,22 @@ const questions = [
 
    ]
 
+  
 
+   // function to initialize the prompts
    function init() {
 
     inquirer.prompt(questions)
 
     .then(function(answers) {
 
-      let svgFile = markdownprompt(answers);
+        let logoMaker = createSVGLogo(answers);
 
         console.log(answers);
 
-        console.log(markdownprompt);
-
-        fs.writeFileSync('svgfile.svg', markdownprompt);
-    
+        fs.writeFileSync('exampleSVG.svg' , logoMaker);
     })
-    
-}
+
+    }
 
 init();

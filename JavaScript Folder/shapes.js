@@ -2,7 +2,7 @@ class Shape {
     constructor(shape_color, text_color, text_fill){
         this.shape_color = shape_color;
         this.text_color = text_color;
-        this.text_fill = text_fill;
+        this.text_fill = text_fill.toUpperCase();
         this.shape;
     }
     renderSVG(){
@@ -60,4 +60,4 @@ class Triangle extends Shape {
 
 
 
-module.exports = {Shape, Circle, Triangle, Square}
+module.exports = {Shape, Circle, Triangle, Square};
