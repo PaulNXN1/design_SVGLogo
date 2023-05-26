@@ -29,3 +29,5 @@ https://paulnxn1.github.io/design_SVGLogo/
 
 Below is a link to a video demonstration of the program.  
 
+https://github.com/PaulNXN1/design_SVGLogo/assets/84299358/451aadc8-bc81-4331-8874-74ae19999838
+
