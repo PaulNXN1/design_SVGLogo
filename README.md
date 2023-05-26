@@ -28,6 +28,7 @@ https://paulnxn1.github.io/design_SVGLogo/
 
 
 Below is a link to a video demonstration of the program.  
+The project was recorded originally on a powerpoint slide.  After, a screen shot program by Microsoft was used to capture the program.  
 
 https://github.com/PaulNXN1/design_SVGLogo/assets/84299358/451aadc8-bc81-4331-8874-74ae19999838
 
