@@ -9,11 +9,11 @@ function createSVGLogo(data) {
 
     if (shape === 'Triangle') {
         console.log(Triangle);
-        const triangle = new Triangle(shape_color, text_color, text_fill, shape);
+        const triangle = new Triangle.Triangle(shape_color, text_color, text_fill, shape);
         return triangle.render();
     }
     else if (shape === 'Circle'){ 
-        const circle = new Circle(shape_color, text_color, text_fill, shape);
+        const circle = new Circle.Circle(shape_color, text_color, text_fill, shape);
         return circle.render();
 
     } else {

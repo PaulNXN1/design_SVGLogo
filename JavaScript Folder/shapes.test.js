@@ -1,4 +1,7 @@
+// Imports
 const {Shape, Circle, Triangle, Square} = require('./shapes');
+
+// Test portion of code to confirm the function "render"
 
 describe('circle', function () {
     it('will test render circle method' , () => {

@@ -11,7 +11,7 @@ const questions = [
     {
       type: 'list',
       message: 'What is the shape of your choice?',
-      choices: ['circle', 'square' , 'triangle'],
+      choices: ['Circle', 'Square' , 'Triangle'],
       name: 'shape'
     },
 
@@ -31,6 +31,12 @@ const questions = [
         type: 'input',
         message: 'What color should your shape be?',
         name: 'shape_color',
+      },
+
+      {
+        type: 'input',
+        message: 'What three letter text would you like in your logo?',
+        name: 'text_fill',
       },
 
 
