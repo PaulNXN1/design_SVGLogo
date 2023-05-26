@@ -17,3 +17,11 @@ The assignment is complete when all aspects of the UPENN Module #10 Acceptance C
 
 
 ## Deployment
+
+Here is a link to my Git Hub Page: 
+
+Here is a link to the deployed application: 
+
+
+Below is a link to a video demonstration of the program.  
+
