@@ -33,7 +33,7 @@ class Circle extends Shape {
     render() {
         return ` <svg version="1.1"
         width="300" height="200"
-        xmlns="http://www.w3.org/2000/svg"> <circle cx="25" cy="75" r="20" stroke="red" fill="${this.shape_color}" stroke-width="5"/><text x="150" y="125" font-size="60" text-anchor="middle" fill="${this.text_color}">${this.text_fill}</text></svg>`
+        xmlns="http://www.w3.org/2000/svg"> <circle cx="150" cy="100" r="65" stroke="red" fill="${this.shape_color}" stroke-width="5"/><text x="150" y="125" font-size="60" text-anchor="middle" fill="${this.text_color}">${this.text_fill}</text></svg>`
     }
     
 }
@@ -59,10 +59,10 @@ class Triangle extends Shape {
     render(){
         return `<svg version="1.1"
         width="300" height="200"
-        xmlns="http://www.w3.org/2000/svg"><polygon points="250,60 100,400 400,400" class="triangle" fill="${this.shape_color}"/><text x="150" y="125" font-size="60" text-anchor="middle" fill="${this.text_color}">${this.text_fill}</text></svg>`
+        xmlns="http://www.w3.org/2000/svg"><polygon points="200, 50 350, 300 65, 250" class="triangle" fill="${this.shape_color}"/><text x="195" y="175" font-size="60" text-anchor="middle" fill="${this.text_color}">${this.text_fill}</text></svg>`
     }
     
-
+    
 }
 
 
