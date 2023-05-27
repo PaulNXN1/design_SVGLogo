@@ -1,6 +1,4 @@
-const Triangle = require('../JavaScript Folder/shapes');
-const Circle = require('../JavaScript Folder/shapes');
-const Square = require('../JavaScript Folder/shapes');
+const {Shape, Circle, Triangle, Square} = require('../JavaScript Folder/shapes');
 
 
 function createSVGLogo(data) {
@@ -9,17 +7,21 @@ function createSVGLogo(data) {
 
     if (shape === 'Triangle') {
         console.log(Triangle);
-        const triangle = new Triangle.Triangle(shape_color, text_color, text_fill, shape);
-        return triangle.render();
+        const triangle = new Triangle(shape_color, text_color, text_fill, shape);
+        triangle.setShape(triangle);
+        return triangle.renderSVG();
     }
     else if (shape === 'Circle'){ 
-        const circle = new Circle.Circle(shape_color, text_color, text_fill, shape);
-        return circle.render();
+        const circle = new Circle(shape_color, text_color, text_fill, shape);
+        circle.setShape(circle);
+        return circle.renderSVG();
 
     } else {
         console.log(Square.Square);
-        const square = new Square.Square(shape_color, text_color, text_fill, shape);
-        return square.render();
+        const square = new Square(shape_color, text_color, text_fill, shape);
+        square.setShape(square);
+        return square.renderSVG();
+
 
 
     }

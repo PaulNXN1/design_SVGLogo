@@ -31,9 +31,7 @@ class Circle extends Shape {
         super(shape_color, text_color, text_fill);
     }
     render() {
-        return ` <svg version="1.1"
-        width="300" height="200"
-        xmlns="http://www.w3.org/2000/svg"> <circle cx="150" cy="100" r="65" stroke="red" fill="${this.shape_color}" stroke-width="5"/><text x="150" y="125" font-size="60" text-anchor="middle" fill="${this.text_color}">${this.text_fill}</text></svg>`
+        return `<circle cx="150" cy="100" r="65" stroke="red" fill="${this.shape_color}" stroke-width="5"/>`
     }
     
 }
@@ -44,9 +42,7 @@ class Square extends Shape {
 
     }
     render(){
-        return `<svg version="1.1"
-        width="300" height="200"
-        xmlns="http://www.w3.org/2000/svg"> <rect x="10" y="10" width="300" height="200" stroke="black" fill="${this.shape_color}" stroke-width="5"/><text x="150" y="125" font-size="60" text-anchor="middle" fill="${this.text_color}">${this.text_fill}</text></svg>`
+        return `<rect x="50" y="10" width="200" height="200" stroke="black" fill="${this.shape_color}"/>`
     }
     
 }
@@ -57,9 +53,7 @@ class Triangle extends Shape {
 
     }
     render(){
-        return `<svg version="1.1"
-        width="300" height="200"
-        xmlns="http://www.w3.org/2000/svg"><polygon points="200, 50 350, 300 65, 250" class="triangle" fill="${this.shape_color}"/><text x="195" y="175" font-size="60" text-anchor="middle" fill="${this.text_color}">${this.text_fill}</text></svg>`
+        return `<polygon points="150, 20 260, 180 35, 180" class="triangle" fill="${this.shape_color}"/>`
     }
     
     
