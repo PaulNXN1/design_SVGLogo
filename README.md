@@ -26,6 +26,9 @@ Here is a link to my Git Hub Page:
 https://github.com/PaulNXN1/design_SVGLogo
 
 
-Below is a link to a video demonstration of the program.  
+Below is a video demonstrating the resulting application:
+
+https://github.com/PaulNXN1/design_SVGLogo/assets/84299358/4af93746-8e22-41be-aea0-8ccfe2e90894
+
 
 
